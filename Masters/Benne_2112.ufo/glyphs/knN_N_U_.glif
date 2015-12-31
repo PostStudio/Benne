@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="knNNU" format="1">
-  <advance width="1152"/>
+  <advance width="795"/>
   <outline>
     <component base="knNNA"/>
     <component base="knmU" xOffset="810"/>

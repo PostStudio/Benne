@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="knDDUU" format="1">
-  <advance width="1414"/>
+  <advance width="700"/>
   <outline>
     <component base="knDDA"/>
     <component base="knmUU" xOffset="699"/>
@@ -9,6 +9,8 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
       <string>=knUU</string>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict/>
     </dict>
   </lib>
 </glyph>

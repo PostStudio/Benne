@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="knLA.base" format="1">
-  <advance width="716"/>
+  <advance width="717"/>
   <outline>
     <component base="knLA"/>
   </outline>
@@ -10,6 +10,8 @@
       <integer>11</integer>
       <key>public.markColor</key>
       <string>0.25,0.25,0.25,1</string>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict/>
     </dict>
   </lib>
 </glyph>

@@ -114,10 +114,10 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
       <integer>11</integer>
-      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
-      <string>=knA</string>
       <key>public.markColor</key>
       <string>0.25,0.25,0.25,1</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>=knA</string>
     </dict>
   </lib>
 </glyph>
