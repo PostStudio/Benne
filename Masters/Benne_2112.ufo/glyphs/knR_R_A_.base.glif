@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="knRRA.base" format="1">
-  <advance width="812"/>
+  <advance width="813"/>
   <outline>
     <component base="knRRA"/>
   </outline>

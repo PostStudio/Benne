@@ -65,6 +65,8 @@
     <dict>
       <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
       <string>=knUU</string>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict/>
     </dict>
   </lib>
 </glyph>
