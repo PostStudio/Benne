@@ -1050,6 +1050,10 @@ value = (
 {
 name = note;
 value = "";
+},
+{
+name = DisableAllAutomaticBehaviour;
+value = 1;
 }
 );
 date = "2015-09-28 16:09:01 +0000";
