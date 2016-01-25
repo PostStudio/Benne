@@ -11,6 +11,14 @@ classes = (
 {
 code = "";
 name = default;
+},
+{
+code = "knmvR knmvRR knAIlengthmark knKAc2 knKHAc2 knGAc2 knGHAc2 knNGAc2 knCAc2 knCHAc2 knJAc2 knJHAc2 knNYAc2 knTTAc2 knTTHAc2 knDDAc2 knDDHAc2 knNNAc2 knTAc2 knTHAc2 knDAc2 knDHAc2 knNAc2 knPAc2 knPHAc2 knBAc2 knBHAc2 knMAc2 knYAc2 knRAc2 knLAc2 knVAc2 knSHAc2 knSSAc2 knSAc2 knHAc2 knRRAc2 knLLAc2 knLLLAc2 knKSSAc2 knTAc2_RAc2 ";
+name = BELOW_BASE_MARKS;
+},
+{
+code = "knmvR.following knmvRR.following knAIlengthmark.following knKAc2.following knKHAc2.following knGAc2.following knGHAc2.following knNGAc2.following knCAc2.following knCHAc2.following knJAc2.following knJHAc2.following knNYAc2.following knTTAc2.following knTTHAc2.following knDDAc2.following knDDHAc2.following knNNAc2.following knTAc2.following knTHAc2.following knDAc2.following knDHAc2.following knNAc2.following knPAc2.following knPHAc2.following knBAc2.following knBHAc2.following knMAc2.following knYAc2.following knRAc2.following knLAc2.following knVAc2.following knSHAc2.following knSSAc2.following knSAc2.following knHAc2.following knRRAc2.following knLLAc2.following knLLLAc2.following knKSSAc2.following knTAc2_RAc2.following ";
+name = BELOW_BASE_MARKS_FOLLOWING;
 }
 );
 copyright = "Copyright \U00A9 2015 by John-Daniel Harrington  All rights reserved. Copyright \U00A9 2015 by Georg Duffner. All rights reserved. Copyright \U00A9 2015 by Indian Type Foundry. All rights reserved.";
@@ -1042,12 +1050,40 @@ value = (
 {
 name = note;
 value = "";
+},
+{
+name = DisableAllAutomaticBehaviour;
+value = 1;
 }
 );
 date = "2015-09-28 16:09:01 +0000";
 designer = "John-Daniel Harrington";
 designerURL = "http://poststudio.net";
 familyName = "Benne";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;\012languagesystem knd2 dflt;\012languagesystem knda dflt;";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "sub knRA knVirama by knReph;";
+name = rphf;
+},
+{
+code = "lookup blwf_new {\012  sub knVirama knKA by knKAc2;\012  sub knVirama knKHA by knKHAc2;\012  sub knVirama knGA by knGAc2;\012  sub knVirama knGHA by knGHAc2;\012  sub knVirama knNGA by knNGAc2;\012  sub knVirama knCA by knCAc2;\012  sub knVirama knCHA by knCHAc2;\012  sub knVirama knJA by knJAc2;\012  sub knVirama knJHA by knJHAc2;\012  sub knVirama knNYA by knNYAc2;\012  sub knVirama knTTA by knTTAc2;\012  sub knVirama knTTHA by knTTHAc2;\012  sub knVirama knDDA by knDDAc2;\012  sub knVirama knDDHA by knDDHAc2;\012  sub knVirama knNNA by knNNAc2;\012  sub knVirama knTA by knTAc2;\012  sub knVirama knTHA by knTHAc2;\012  sub knVirama knDA by knDAc2;\012  sub knVirama knDHA by knDHAc2;\012  sub knVirama knNA by knNAc2;\012  sub knVirama knPA by knPAc2;\012  sub knVirama knPHA by knPHAc2;\012  sub knVirama knBA by knBAc2;\012  sub knVirama knBHA by knBHAc2;\012  sub knVirama knMA by knMAc2;\012  sub knVirama knYA by knYAc2;\012  sub knVirama knRA by knRAc2;\012  sub knVirama knLA by knLAc2;\012  sub knVirama knVA by knVAc2;\012  sub knVirama knSHA by knSHAc2;\012  sub knVirama knSSA by knSSAc2;\012  sub knVirama knSA by knSAc2;\012  sub knVirama knHA by knHAc2;\012  sub knVirama knRRA by knRRAc2;\012  sub knVirama knLLA by knLLAc2;\012  sub knVirama knLLLA by knLLLAc2;\012} blwf_new;\012\012lookup blwf_old {\012  sub knKA knVirama by knKAc2;\012  sub knKHA knVirama by knKHAc2;\012  sub knGA knVirama by knGAc2;\012  sub knGHA knVirama by knGHAc2;\012  sub knNGA knVirama by knNGAc2;\012  sub knCA knVirama by knCAc2;\012  sub knCHA knVirama by knCHAc2;\012  sub knJA knVirama by knJAc2;\012  sub knJHA knVirama by knJHAc2;\012  sub knNYA knVirama by knNYAc2;\012  sub knTTA knVirama by knTTAc2;\012  sub knTTHA knVirama by knTTHAc2;\012  sub knDDA knVirama by knDDAc2;\012  sub knDDHA knVirama by knDDHAc2;\012  sub knNNA knVirama by knNNAc2;\012  sub knTA knVirama by knTAc2;\012  sub knTHA knVirama by knTHAc2;\012  sub knDA knVirama by knDAc2;\012  sub knDHA knVirama by knDHAc2;\012  sub knNA knVirama by knNAc2;\012  sub knPA knVirama by knPAc2;\012  sub knPHA knVirama by knPHAc2;\012  sub knBA knVirama by knBAc2;\012  sub knBHA knVirama by knBHAc2;\012  sub knMA knVirama by knMAc2;\012  sub knYA knVirama by knYAc2;\012  sub knRA knVirama by knRAc2;\012  sub knLA knVirama by knLAc2;\012  sub knVA knVirama by knVAc2;\012  sub knSHA knVirama by knSHAc2;\012  sub knSSA knVirama by knSSAc2;\012  sub knSA knVirama by knSAc2;\012  sub knHA knVirama by knHAc2;\012  sub knRRA knVirama by knRRAc2;\012  sub knLLA knVirama by knLLAc2;\012  sub knLLLA knVirama by knLLLAc2;\012} blwf_old;\012\012script DFLT;\012\011lookup blwf_new;\012\012script knd2;\012\011lookup blwf_new;\012\012script knda;\012\011lookup blwf_old;";
+name = blwf;
+},
+{
+code = "lookup pres_matra {\012\012  sub knKA knmAA by knKAA;\012  sub knKHA knmAA by knKHAA;\012  sub knGA knmAA by knGAA;\012  sub knGHA knmAA by knGHAA;\012  sub knNGA knmAA by knNGAA;\012  sub knCA knmAA by knCAA;\012  sub knCHA knmAA by knCHAA;\012  sub knJA knmAA by knJAA;\012  sub knJHA knmAA by knJHAA;\012  sub knNYA knmAA by knNYAA;\012  sub knTTA knmAA by knTTAA;\012  sub knTTHA knmAA by knTTHAA;\012  sub knDDA knmAA by knDDAA;\012  sub knDDHA knmAA by knDDHAA;\012  sub knNNA knmAA by knNNAA;\012  sub knTA knmAA by knTAA;\012  sub knTHA knmAA by knTHAA;\012  sub knDA knmAA by knDAA;\012  sub knDHA knmAA by knDHAA;\012  sub knNA knmAA by knNAA;\012  sub knPA knmAA by knPAA;\012  sub knPHA knmAA by knPHAA;\012  sub knBA knmAA by knBAA;\012  sub knBHA knmAA by knBHAA;\012  sub knMA knmAA by knMAA;\012  sub knYA knmAA by knYAA;\012  sub knRA knmAA by knRAA;\012  sub knLA knmAA by knLAA;\012  sub knVA knmAA by knVAA;\012  sub knSHA knmAA by knSHAA;\012  sub knSSA knmAA by knSSAA;\012  sub knSA knmAA by knSAA;\012  sub knHA knmAA by knHAA;\012  sub knRRA knmAA by knRRAA;\012  sub knLLA knmAA by knLLAA;\012  sub knLLLA knmAA by knLLLAA;\012\012  sub knKA knmI by knKI;\012  sub knKHA knmI by knKHI;\012  sub knGA knmI by knGI;\012  sub knGHA knmI by knGHI;\012  sub knNGA knmI by knNGI;\012  sub knCA knmI by knCI;\012  sub knCHA knmI by knCHI;\012  sub knJA knmI by knJI;\012  sub knJHA knmI by knJHI;\012  sub knNYA knmI by knNYI;\012  sub knTTA knmI by knTTI;\012  sub knTTHA knmI by knTTHI;\012  sub knDDA knmI by knDDI;\012  sub knDDHA knmI by knDDHI;\012  sub knNNA knmI by knNNI;\012  sub knTA knmI by knTI;\012  sub knTHA knmI by knTHI;\012  sub knDA knmI by knDI;\012  sub knDHA knmI by knDHI;\012  sub knNA knmI by knNI;\012  sub knPA knmI by knPI;\012  sub knPHA knmI by knPHI;\012  sub knBA knmI by knBI;\012  sub knBHA knmI by knBHI;\012  sub knMA knmI by knMI;\012  sub knYA knmI by knYI;\012  sub knRA knmI by knRI;\012  sub knLA knmI by knLI;\012  sub knVA knmI by knVI;\012  sub knSHA knmI by knSHI;\012  sub knSSA knmI by knSSI;\012  sub knSA knmI by knSI;\012  sub knHA knmI by knHI;\012  sub knRRA knmI by knRRI;\012  sub knLLA knmI by knLLI;\012  sub knLLLA knmI by knLLLI;\012\012  sub knKA knmU by knKU;\012  sub knKHA knmU by knKHU;\012  sub knGA knmU by knGU;\012  sub knGHA knmU by knGHU;\012  sub knNGA knmU by knNGU;\012  sub knCA knmU by knCU;\012  sub knCHA knmU by knCHU;\012  sub knJA knmU by knJU;\012  sub knJHA knmU by knJHU;\012  sub knNYA knmU by knNYU;\012  sub knTTA knmU by knTTU;\012  sub knTTHA knmU by knTTHU;\012  sub knDDA knmU by knDDU;\012  sub knDDHA knmU by knDDHU;\012  sub knNNA knmU by knNNU;\012  sub knTA knmU by knTU;\012  sub knTHA knmU by knTHU;\012  sub knDA knmU by knDU;\012  sub knDHA knmU by knDHU;\012  sub knNA knmU by knNU;\012  sub knPA knmU by knPU;\012  sub knPHA knmU by knPHU;\012  sub knBA knmU by knBU;\012  sub knBHA knmU by knBHU;\012  sub knMA knmU by knMU;\012  sub knYA knmU by knYU;\012  sub knRA knmU by knRU;\012  sub knLA knmU by knLU;\012  sub knVA knmU by knVU;\012  sub knSHA knmU by knSHU;\012  sub knSSA knmU by knSSU;\012  sub knSA knmU by knSU;\012  sub knHA knmU by knHU;\012  sub knRRA knmU by knRRU;\012  sub knLLA knmU by knLLU;\012  sub knLLLA knmU by knLLLU;\012\012  sub knKA knmUU by knKUU;\012  sub knKHA knmUU by knKHUU;\012  sub knGA knmUU by knGUU;\012  sub knGHA knmUU by knGHUU;\012  sub knNGA knmUU by knNGUU;\012  sub knCA knmUU by knCUU;\012  sub knCHA knmUU by knCHUU;\012  sub knJA knmUU by knJUU;\012  sub knJHA knmUU by knJHUU;\012  sub knNYA knmUU by knNYUU;\012  sub knTTA knmUU by knTTUU;\012  sub knTTHA knmUU by knTTHUU;\012  sub knDDA knmUU by knDDUU;\012  sub knDDHA knmUU by knDDHUU;\012  sub knNNA knmUU by knNNUU;\012  sub knTA knmUU by knTUU;\012  sub knTHA knmUU by knTHUU;\012  sub knDA knmUU by knDUU;\012  sub knDHA knmUU by knDHUU;\012  sub knNA knmUU by knNUU;\012  sub knPA knmUU by knPUU;\012  sub knPHA knmUU by knPHUU;\012  sub knBA knmUU by knBUU;\012  sub knBHA knmUU by knBHUU;\012  sub knMA knmUU by knMUU;\012  sub knYA knmUU by knYUU;\012  sub knRA knmUU by knRUU;\012  sub knLA knmUU by knLUU;\012  sub knVA knmUU by knVUU;\012  sub knSHA knmUU by knSHUU;\012  sub knSSA knmUU by knSSUU;\012  sub knSA knmUU by knSUU;\012  sub knHA knmUU by knHUU;\012  sub knRRA knmUU by knRRUU;\012  sub knLLA knmUU by knLLUU;\012  sub knLLLA knmUU by knLLLUU;\012\012  sub knKA knmE by knKE;\012  sub knKHA knmE by knKHE;\012  sub knGA knmE by knGE;\012  sub knGHA knmE by knGHE;\012  sub knNGA knmE by knNGE;\012  sub knCA knmE by knCE;\012  sub knCHA knmE by knCHE;\012  sub knJA knmE by knJE;\012  sub knJHA knmE by knJHE;\012  sub knNYA knmE by knNYE;\012  sub knTTA knmE by knTTE;\012  sub knTTHA knmE by knTTHE;\012  sub knDDA knmE by knDDE;\012  sub knDDHA knmE by knDDHE;\012  sub knNNA knmE by knNNE;\012  sub knTA knmE by knTE;\012  sub knTHA knmE by knTHE;\012  sub knDA knmE by knDE;\012  sub knDHA knmE by knDHE;\012  sub knNA knmE by knNE;\012  sub knPA knmE by knPE;\012  sub knPHA knmE by knPHE;\012  sub knBA knmE by knBE;\012  sub knBHA knmE by knBHE;\012  sub knMA knmE by knME;\012  sub knYA knmE by knYE;\012  sub knRA knmE by knRE;\012  sub knLA knmE by knLE;\012  sub knVA knmE by knVE;\012  sub knSHA knmE by knSHE;\012  sub knSSA knmE by knSSE;\012  sub knSA knmE by knSE;\012  sub knHA knmE by knHE;\012  sub knRRA knmE by knRRE;\012  sub knLLA knmE by knLLE;\012  sub knLLLA knmE by knLLLE;\012\012  sub knKA knmE knmUU by knKO;\012  sub knKHA knmE knmUU by knKHO;\012  sub knGA knmE knmUU by knGO;\012  sub knGHA knmE knmUU by knGHO;\012  sub knNGA knmE knmUU by knNGO;\012  sub knCA knmE knmUU by knCO;\012  sub knCHA knmE knmUU by knCHO;\012  sub knJA knmE knmUU by knJO;\012  sub knJHA knmE knmUU by knJHO;\012  sub knNYA knmE knmUU by knNYO;\012  sub knTTA knmE knmUU by knTTO;\012  sub knTTHA knmE knmUU by knTTHO;\012  sub knDDA knmE knmUU by knDDO;\012  sub knDDHA knmE knmUU by knDDHO;\012  sub knNNA knmE knmUU by knNNO;\012  sub knTA knmE knmUU by knTO;\012  sub knTHA knmE knmUU by knTHO;\012  sub knDA knmE knmUU by knDO;\012  sub knDHA knmE knmUU by knDHO;\012  sub knNA knmE knmUU by knNO;\012  sub knPA knmE knmUU by knPO;\012  sub knPHA knmE knmUU by knPHO;\012  sub knBA knmE knmUU by knBO;\012  sub knBHA knmE knmUU by knBHO;\012  sub knMA knmE knmUU by knMO;\012  sub knYA knmE knmUU by knYO;\012  sub knRA knmE knmUU by knRO;\012  sub knLA knmE knmUU by knLO;\012  sub knVA knmE knmUU by knVO;\012  sub knSHA knmE knmUU by knSHO;\012  sub knSSA knmE knmUU by knSSO;\012  sub knSA knmE knmUU by knSO;\012  sub knHA knmE knmUU by knHO;\012  sub knRRA knmE knmUU by knRRO;\012  sub knLLA knmE knmUU by knLLO;\012  sub knLLLA knmE knmUU by knLLLO;\012\012  sub knKA knmAU by knKAU;\012  sub knKHA knmAU by knKHAU;\012  sub knGA knmAU by knGAU;\012  sub knGHA knmAU by knGHAU;\012  sub knNGA knmAU by knNGAU;\012  sub knCA knmAU by knCAU;\012  sub knCHA knmAU by knCHAU;\012  sub knJA knmAU by knJAU;\012  sub knJHA knmAU by knJHAU;\012  sub knNYA knmAU by knNYAU;\012  sub knTTA knmAU by knTTAU;\012  sub knTTHA knmAU by knTTHAU;\012  sub knDDA knmAU by knDDAU;\012  sub knDDHA knmAU by knDDHAU;\012  sub knNNA knmAU by knNNAU;\012  sub knTA knmAU by knTAU;\012  sub knTHA knmAU by knTHAU;\012  sub knDA knmAU by knDAU;\012  sub knDHA knmAU by knDHAU;\012  sub knNA knmAU by knNAU;\012  sub knPA knmAU by knPAU;\012  sub knPHA knmAU by knPHAU;\012  sub knBA knmAU by knBAU;\012  sub knBHA knmAU by knBHAU;\012  sub knMA knmAU by knMAU;\012  sub knYA knmAU by knYAU;\012  sub knRA knmAU by knRAU;\012  sub knLA knmAU by knLAU;\012  sub knVA knmAU by knVAU;\012  sub knSHA knmAU by knSHAU;\012  sub knSSA knmAU by knSSAU;\012  sub knSA knmAU by knSAU;\012  sub knHA knmAU by knHAU;\012  sub knRRA knmAU by knRRAU;\012  sub knLLA knmAU by knLLAU;\012  sub knLLLA knmAU by knLLLAU;\012\012} pres_matra;\012\012lookup pres_kssa {\012  sub [knKA knKAA knKI knKU knKUU knKE knKO knKAU] knSSAc2' by knSSAc2.kssa;\012} pres_kssa;\012\012lookup pres_c2_ligating {\012  sub knKAc2 knSSAc2 by knKSSAc2;\012  sub knTAc2 knRAc2 by knTAc2_RAc2;\012} pres_c2_ligating;\012\012lookup pres_c2_following {\012  sub\012    [@BELOW_BASE_MARKS @BELOW_BASE_MARKS_FOLLOWING knSSAc2.kssa]\012    @BELOW_BASE_MARKS'\012    by\012    @BELOW_BASE_MARKS_FOLLOWING;\012} pres_c2_following;\012\012  lookup pres_matra;\012  lookup pres_kssa;\012  lookup pres_c2_following;\012  lookup pres_c2_ligating;";
+name = pres;
+},
+{
+code = "lookup haln {\012\012  lookupflag IgnoreMarks;\012\012  sub knKA knVirama by knK;\012  sub knKHA knVirama by knKH;\012  sub knGA knVirama by knG;\012  sub knGHA knVirama by knGH;\012  sub knNGA knVirama by knNG;\012  sub knCA knVirama by knC;\012  sub knCHA knVirama by knCH;\012  sub knJA knVirama by knJ;\012  sub knJHA knVirama by knJH;\012  sub knNYA knVirama by knNY;\012  sub knTTA knVirama by knTT;\012  sub knTTHA knVirama by knTTH;\012  sub knDDA knVirama by knDD;\012  sub knDDHA knVirama by knDDH;\012  sub knNNA knVirama by knNN;\012  sub knTA knVirama by knT;\012  sub knTHA knVirama by knTH;\012  sub knDA knVirama by knD;\012  sub knDHA knVirama by knDH;\012  sub knNA knVirama by knN;\012  sub knPA knVirama by knP;\012  sub knPHA knVirama by knPH;\012  sub knBA knVirama by knB;\012  sub knBHA knVirama by knBH;\012  sub knMA knVirama by knM;\012  sub knYA knVirama by knY;\012  sub knRA knVirama by knR;\012  sub knLA knVirama by knL;\012  sub knVA knVirama by knV;\012  sub knSHA knVirama by knSH;\012  sub knSSA knVirama by knSS;\012  sub knSA knVirama by knS;\012  sub knHA knVirama by knH;\012  sub knRRA knVirama by knRR;\012  sub knLLA knVirama by knLL;\012  sub knLLLA knVirama by knLLL;\012\012  lookupflag 0;\012\012} haln;\012\012lookup haln;";
+name = haln;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -1058,14 +1094,14 @@ alignmentZones = (
 );
 ascender = 777;
 capHeight = 655;
-descender = -285;
+descender = "-285";
 guideLines = (
 {
 position = "{-6, 509}";
 },
 {
-alignment = center;
 position = "{4, 434}";
+alignment = center;
 },
 {
 position = "{78, -75}";
@@ -9412,6 +9448,7 @@ layers = (
 components = (
 {
 name = virama;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -20113,6 +20150,7 @@ layers = (
 components = (
 {
 name = knBA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -20828,6 +20866,7 @@ layers = (
 components = (
 {
 name = knLA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -21586,6 +21625,7 @@ layers = (
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -21795,6 +21835,7 @@ layers = (
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -26128,7 +26169,7 @@ width = 923;
 {
 color = (255,215,172,1);
 glyphname = knKU;
-lastChange = "2016-01-19 19:36:35 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 anchors = (
@@ -26140,6 +26181,7 @@ position = "{270, 0}";
 components = (
 {
 name = knKA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26148,7 +26190,7 @@ transform = "{1, 0, 0, 1, 505, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 837;
+width = 505;
 }
 );
 userData = {
@@ -26178,12 +26220,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knKHU;
-lastChange = "2016-01-19 19:36:35 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knKHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26192,19 +26235,20 @@ transform = "{1, 0, 0, 1, 767, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1099;
+width = 767;
 }
 );
 },
 {
 color = (255,215,172,1);
 glyphname = knGU;
-lastChange = "2016-01-19 19:36:35 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26213,7 +26257,7 @@ transform = "{1, 0, 0, 1, 584, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 916;
+width = 584;
 }
 );
 userData = {
@@ -26243,12 +26287,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knGHU;
-lastChange = "2016-01-19 19:36:35 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knGHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26257,7 +26302,7 @@ transform = "{1, 0, 0, 1, 841, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1173;
+width = 841;
 }
 );
 },
@@ -26269,6 +26314,7 @@ layers = (
 components = (
 {
 name = knNGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -26339,12 +26385,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knCU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knCA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26353,7 +26400,7 @@ transform = "{1, 0, 0, 1, 737, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1069;
+width = 737;
 }
 );
 userData = {
@@ -26383,12 +26430,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knCHU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knCHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26397,7 +26445,7 @@ transform = "{1, 0, 0, 1, 786, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1118;
+width = 786;
 }
 );
 },
@@ -26409,6 +26457,7 @@ layers = (
 components = (
 {
 name = knJA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -26632,12 +26681,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knJHU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knJHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26646,7 +26696,7 @@ transform = "{1, 0, 0, 1, 1221, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1553;
+width = 1221;
 }
 );
 },
@@ -26797,12 +26847,13 @@ width = 1324;
 },
 {
 glyphname = knTTU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knTTA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26811,7 +26862,7 @@ transform = "{1, 0, 0, 1, 785, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1117;
+width = 785;
 }
 );
 },
@@ -26822,6 +26873,7 @@ layers = (
 components = (
 {
 name = knTTHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -26868,12 +26920,13 @@ width = 941;
 {
 color = (255,215,172,1);
 glyphname = knDDU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knDDA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26882,7 +26935,7 @@ transform = "{1, 0, 0, 1, 700, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1032;
+width = 700;
 }
 );
 userData = {
@@ -26913,12 +26966,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDDHU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knDDHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26927,7 +26981,7 @@ transform = "{1, 0, 0, 1, 700, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1032;
+width = 700;
 }
 );
 userData = {
@@ -26957,12 +27011,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knNNU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knNNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26971,19 +27026,20 @@ transform = "{1, 0, 0, 1, 785, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1117;
+width = 785;
 }
 );
 },
 {
 color = (255,215,172,1);
 glyphname = knTU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knTA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -26992,7 +27048,7 @@ transform = "{1, 0, 0, 1, 594, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 926;
+width = 594;
 }
 );
 userData = {
@@ -27023,12 +27079,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knTHU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knTHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -27037,7 +27094,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1022;
+width = 690;
 }
 );
 userData = {
@@ -27068,12 +27125,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knDA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -27082,7 +27140,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1022;
+width = 690;
 }
 );
 userData = {
@@ -27113,12 +27171,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDHU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knDHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -27127,7 +27186,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1022;
+width = 690;
 }
 );
 userData = {
@@ -27158,12 +27217,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knNU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:09 +0000";
 layers = (
 {
 components = (
 {
 name = knNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -27172,7 +27232,7 @@ transform = "{1, 0, 0, 1, 609, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 941;
+width = 609;
 }
 );
 userData = {
@@ -28120,12 +28180,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knBU;
-lastChange = "2016-01-19 19:36:36 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knBA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28134,7 +28195,7 @@ transform = "{1, 0, 0, 1, 740, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1072;
+width = 740;
 }
 );
 userData = {
@@ -28165,12 +28226,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knBHU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knBHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28179,7 +28241,7 @@ transform = "{1, 0, 0, 1, 747, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1094;
+width = 747;
 }
 );
 userData = {
@@ -28210,12 +28272,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knMU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knMA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28224,7 +28287,7 @@ transform = "{1, 0, 0, 1, 1042, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1389;
+width = 1027;
 }
 );
 userData = {
@@ -28255,12 +28318,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knYU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knYA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28269,7 +28333,7 @@ transform = "{1, 0, 0, 1, 1231, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1578;
+width = 1221;
 }
 );
 userData = {
@@ -28300,12 +28364,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knRU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28314,7 +28379,7 @@ transform = "{1, 0, 0, 1, 570, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 917;
+width = 560;
 }
 );
 userData = {
@@ -28350,6 +28415,7 @@ layers = (
 components = (
 {
 name = knLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -28404,6 +28470,7 @@ layers = (
 components = (
 {
 name = knVA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -28473,12 +28540,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knSHU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knSHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28487,19 +28555,20 @@ transform = "{1, 0, 0, 1, 593, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 940;
+width = 593;
 }
 );
 },
 {
 color = (255,215,172,1);
 glyphname = knSSU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knSSA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28508,7 +28577,7 @@ transform = "{1, 0, 0, 1, 711, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1058;
+width = 721;
 }
 );
 userData = {
@@ -28543,6 +28612,7 @@ layers = (
 components = (
 {
 name = knSA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -28589,12 +28659,13 @@ width = 1037;
 {
 color = (255,215,172,1);
 glyphname = knHU;
-lastChange = "2016-01-17 20:08:08 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28603,7 +28674,7 @@ transform = "{1, 0, 0, 1, 609, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 956;
+width = 609;
 }
 );
 userData = {
@@ -28633,12 +28704,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knRRU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28647,7 +28719,7 @@ transform = "{1, 0, 0, 1, 813, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1160;
+width = 793;
 }
 );
 },
@@ -28659,6 +28731,7 @@ layers = (
 components = (
 {
 name = knLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -28729,12 +28802,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knLLLU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:10 +0000";
 layers = (
 {
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmU;
@@ -28743,7 +28817,7 @@ transform = "{1, 0, 0, 1, 813, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1160;
+width = 793;
 }
 );
 userData = {
@@ -28774,7 +28848,7 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knKUU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 anchors = (
@@ -28786,6 +28860,7 @@ position = "{270, 0}";
 components = (
 {
 name = knKA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -28794,7 +28869,7 @@ transform = "{1, 0, 0, 1, 535, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1250;
+width = 505;
 }
 );
 userData = {
@@ -28825,12 +28900,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knKHUU;
-lastChange = "2016-01-15 11:44:34 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knKHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -28839,7 +28915,7 @@ transform = "{1, 0, 0, 1, 783, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1498;
+width = 767;
 }
 );
 userData = {
@@ -28870,12 +28946,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knGUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -28884,7 +28961,7 @@ transform = "{1, 0, 0, 1, 584, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1299;
+width = 584;
 }
 );
 userData = {
@@ -28915,12 +28992,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knGHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knGHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -28929,7 +29007,7 @@ transform = "{1, 0, 0, 1, 841, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1556;
+width = 841;
 }
 );
 userData = {
@@ -28965,6 +29043,7 @@ layers = (
 components = (
 {
 name = knNGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -29360,12 +29439,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knCUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knCA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29374,7 +29454,7 @@ transform = "{1, 0, 0, 1, 722, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1437;
+width = 737;
 }
 );
 userData = {
@@ -29405,12 +29485,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knCHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knCHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29419,7 +29500,7 @@ transform = "{1, 0, 0, 1, 801, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1516;
+width = 786;
 }
 );
 userData = {
@@ -29455,6 +29536,7 @@ layers = (
 components = (
 {
 name = knJA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -29552,12 +29634,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knJHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knJHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29566,7 +29649,7 @@ transform = "{1, 0, 0, 1, 1231, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1946;
+width = 1221;
 }
 );
 userData = {
@@ -29755,12 +29838,13 @@ width = 1693;
 {
 color = (255,215,172,1);
 glyphname = knTTUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knTTA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29769,7 +29853,7 @@ transform = "{1, 0, 0, 1, 805, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1520;
+width = 785;
 }
 );
 userData = {
@@ -29800,12 +29884,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knTTHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knTTHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29814,7 +29899,7 @@ transform = "{1, 0, 0, 1, 580, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1295;
+width = 560;
 }
 );
 userData = {
@@ -29845,12 +29930,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDDUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knDDA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29859,7 +29945,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1405;
+width = 700;
 }
 );
 userData = {
@@ -29890,12 +29976,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDDHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knDDHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29904,7 +29991,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1405;
+width = 700;
 }
 );
 userData = {
@@ -29934,12 +30021,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knNNUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knNNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29948,19 +30036,20 @@ transform = "{1, 0, 0, 1, 800, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1515;
+width = 785;
 }
 );
 },
 {
 color = (255,215,172,1);
 glyphname = knTUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knTA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -29969,7 +30058,7 @@ transform = "{1, 0, 0, 1, 594, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1309;
+width = 594;
 }
 );
 userData = {
@@ -30000,12 +30089,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knTHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knTHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -30014,7 +30104,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1405;
+width = 690;
 }
 );
 userData = {
@@ -30045,12 +30135,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knDA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -30059,7 +30150,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1405;
+width = 690;
 }
 );
 userData = {
@@ -30090,12 +30181,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knDHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knDHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -30104,7 +30196,7 @@ transform = "{1, 0, 0, 1, 690, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1405;
+width = 690;
 }
 );
 userData = {
@@ -30135,12 +30227,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knNUU;
-lastChange = "2016-01-17 20:08:08 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -30149,7 +30242,7 @@ transform = "{1, 0, 0, 1, 609, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1324;
+width = 609;
 }
 );
 userData = {
@@ -31182,12 +31275,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knBUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knBA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31196,7 +31290,7 @@ transform = "{1, 0, 0, 1, 724, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1439;
+width = 740;
 }
 );
 userData = {
@@ -31227,12 +31321,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knBHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knBHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31241,7 +31336,7 @@ transform = "{1, 0, 0, 1, 747, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1462;
+width = 747;
 }
 );
 userData = {
@@ -31272,12 +31367,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knMUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knMA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31286,7 +31382,7 @@ transform = "{1, 0, 0, 1, 1042, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1757;
+width = 1027;
 }
 );
 userData = {
@@ -31317,12 +31413,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knYUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knYA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31331,7 +31428,7 @@ transform = "{1, 0, 0, 1, 1231, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1946;
+width = 1221;
 }
 );
 userData = {
@@ -31362,12 +31459,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knRUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:12 +0000";
 layers = (
 {
 components = (
 {
 name = knRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31376,7 +31474,7 @@ transform = "{1, 0, 0, 1, 570, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1285;
+width = 560;
 }
 );
 userData = {
@@ -31411,6 +31509,7 @@ layers = (
 components = (
 {
 name = knLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -31489,6 +31588,7 @@ layers = (
 components = (
 {
 name = knVA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -31585,12 +31685,13 @@ com.typemytype.robofont.mark = (
 },
 {
 glyphname = knSHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knSHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31599,19 +31700,20 @@ transform = "{1, 0, 0, 1, 593, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1308;
+width = 593;
 }
 );
 },
 {
 color = (255,215,172,1);
 glyphname = knSSUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knSSA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31620,7 +31722,7 @@ transform = "{1, 0, 0, 1, 711, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1426;
+width = 721;
 }
 );
 userData = {
@@ -31651,12 +31753,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knSUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knSA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31665,7 +31768,7 @@ transform = "{1, 0, 0, 1, 679, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1394;
+width = 664;
 }
 );
 userData = {
@@ -31696,12 +31799,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knHUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knHA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31710,7 +31814,7 @@ transform = "{1, 0, 0, 1, 724, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1439;
+width = 724;
 }
 );
 userData = {
@@ -31741,12 +31845,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knRRUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31755,7 +31860,7 @@ transform = "{1, 0, 0, 1, 813, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1528;
+width = 793;
 }
 );
 userData = {
@@ -31791,6 +31896,7 @@ layers = (
 components = (
 {
 name = knLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -31888,12 +31994,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knLLLUU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:13 +0000";
 layers = (
 {
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -31902,7 +32009,7 @@ transform = "{1, 0, 0, 1, 813, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1528;
+width = 793;
 }
 );
 userData = {
@@ -32072,6 +32179,7 @@ layers = (
 components = (
 {
 name = knKHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -37323,6 +37431,7 @@ layers = (
 components = (
 {
 name = knLA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -38512,6 +38621,7 @@ position = "{270, 0}";
 components = (
 {
 name = knKE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38556,6 +38666,7 @@ layers = (
 components = (
 {
 name = knKHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38600,6 +38711,7 @@ layers = (
 components = (
 {
 name = knGE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38644,6 +38756,7 @@ layers = (
 components = (
 {
 name = knGHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38688,6 +38801,7 @@ layers = (
 components = (
 {
 name = knNGE;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -38790,6 +38904,7 @@ layers = (
 components = (
 {
 name = knCE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38834,6 +38949,7 @@ layers = (
 components = (
 {
 name = knCHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -38878,6 +38994,7 @@ layers = (
 components = (
 {
 name = knJE;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -38980,6 +39097,7 @@ layers = (
 components = (
 {
 name = knJHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39212,6 +39330,7 @@ layers = (
 components = (
 {
 name = knTTE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39256,6 +39375,7 @@ layers = (
 components = (
 {
 name = knTTHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39300,6 +39420,7 @@ layers = (
 components = (
 {
 name = knDDE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39344,6 +39465,7 @@ layers = (
 components = (
 {
 name = knDDHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39388,6 +39510,7 @@ layers = (
 components = (
 {
 name = knNNE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39433,6 +39556,7 @@ layers = (
 components = (
 {
 name = knTE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39477,6 +39601,7 @@ layers = (
 components = (
 {
 name = knTHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39521,6 +39646,7 @@ layers = (
 components = (
 {
 name = knDE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39565,6 +39691,7 @@ layers = (
 components = (
 {
 name = knDHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39609,6 +39736,7 @@ layers = (
 components = (
 {
 name = knNE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39653,6 +39781,7 @@ layers = (
 components = (
 {
 name = knPE;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -39756,6 +39885,7 @@ layers = (
 components = (
 {
 name = knPE;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -39876,6 +40006,7 @@ layers = (
 components = (
 {
 name = knBE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -39920,6 +40051,7 @@ layers = (
 components = (
 {
 name = knBHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40267,6 +40399,7 @@ layers = (
 components = (
 {
 name = knRE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40311,6 +40444,7 @@ layers = (
 components = (
 {
 name = knLE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40356,6 +40490,7 @@ layers = (
 components = (
 {
 name = knVE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40399,6 +40534,7 @@ layers = (
 components = (
 {
 name = knSHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40418,6 +40554,7 @@ layers = (
 components = (
 {
 name = knSSE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40438,6 +40575,7 @@ layers = (
 components = (
 {
 name = knSE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40482,6 +40620,7 @@ layers = (
 components = (
 {
 name = knHE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40526,6 +40665,7 @@ layers = (
 components = (
 {
 name = knRRE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40570,6 +40710,7 @@ layers = (
 components = (
 {
 name = knLLE;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -40671,6 +40812,7 @@ layers = (
 components = (
 {
 name = knLLLE;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmUU;
@@ -40698,6 +40840,7 @@ position = "{300, 0}";
 components = (
 {
 name = knKA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -40742,6 +40885,7 @@ layers = (
 components = (
 {
 name = knKHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -41087,12 +41231,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,185,182,1);
 glyphname = knNGAU;
-lastChange = "2016-01-15 11:44:35 +0000";
+lastChange = "2016-01-21 04:42:15 +0000";
 layers = (
 {
 components = (
 {
 name = knNGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -41101,7 +41246,7 @@ transform = "{1, 0, 0, 1, 685, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1114;
+width = 715;
 }
 );
 userData = {
@@ -41261,6 +41406,7 @@ layers = (
 components = (
 {
 name = knCHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -41427,6 +41573,7 @@ layers = (
 components = (
 {
 name = knJHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -41529,12 +41676,13 @@ com.typemytype.robofont.mark = (
 {
 color = (255,215,172,1);
 glyphname = knNYAU;
-lastChange = "2016-01-15 11:44:36 +0000";
+lastChange = "2016-01-21 04:42:15 +0000";
 layers = (
 {
 components = (
 {
 name = knNYA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -41543,7 +41691,7 @@ transform = "{1, 0, 0, 1, 969, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1398;
+width = 942;
 }
 );
 userData = {
@@ -42074,12 +42222,13 @@ com.typemytype.robofont.mark = (
 {
 color = 0;
 glyphname = knNNAU;
-lastChange = "2016-01-15 11:44:36 +0000";
+lastChange = "2016-01-21 04:42:15 +0000";
 layers = (
 {
 components = (
 {
 name = knNNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -42088,7 +42237,7 @@ transform = "{1, 0, 0, 1, 800, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1229;
+width = 785;
 }
 );
 userData = {
@@ -43055,12 +43204,13 @@ width = 1166;
 {
 color = (255,215,172,1);
 glyphname = knMAU;
-lastChange = "2016-01-15 11:44:36 +0000";
+lastChange = "2016-01-21 04:42:16 +0000";
 layers = (
 {
 components = (
 {
 name = knMA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -43069,7 +43219,7 @@ transform = "{1, 0, 0, 1, 1042, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1471;
+width = 1027;
 }
 );
 userData = {
@@ -43105,6 +43255,7 @@ layers = (
 components = (
 {
 name = knYA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -43277,12 +43428,13 @@ width = 1009;
 {
 color = (255,215,172,1);
 glyphname = knLAU;
-lastChange = "2016-01-15 11:44:36 +0000";
+lastChange = "2016-01-21 04:42:16 +0000";
 layers = (
 {
 components = (
 {
 name = knLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = knmAU;
@@ -43291,7 +43443,7 @@ transform = "{1, 0, 0, 1, 717, 0}";
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 1146;
+width = 687;
 }
 );
 userData = {
@@ -43884,6 +44036,7 @@ layers = (
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44110,6 +44263,7 @@ layers = (
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44227,6 +44381,7 @@ transform = "{1, 0, 0, 1, 550, 0}";
 },
 {
 name = knKA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44271,6 +44426,7 @@ transform = "{1, 0, 0, 1, 790, 0}";
 },
 {
 name = knKHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44315,6 +44471,7 @@ transform = "{1, 0, 0, 1, 530, 0}";
 },
 {
 name = knGA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44355,6 +44512,7 @@ layers = (
 components = (
 {
 name = knGHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44430,6 +44588,7 @@ layers = (
 components = (
 {
 name = knNGA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44510,6 +44669,7 @@ transform = "{1, 0, 0, 1, 725, 0}";
 },
 {
 name = knCA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44554,6 +44714,7 @@ transform = "{1, 0, 0, 1, 790, 0}";
 },
 {
 name = knCHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44598,6 +44759,7 @@ transform = "{1, 0, 0, 1, 705, 0}";
 },
 {
 name = knJA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44642,6 +44804,7 @@ transform = "{1, 0, 0, 1, 1250, 0}";
 },
 {
 name = knJHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44682,6 +44845,7 @@ layers = (
 components = (
 {
 name = knNYA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44761,6 +44925,7 @@ transform = "{1, 0, 0, 1, 800, 0}";
 },
 {
 name = knTTA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44805,6 +44970,7 @@ transform = "{1, 0, 0, 1, 580, 0}";
 },
 {
 name = knTTHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44849,6 +45015,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knDDA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -44893,6 +45060,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knDDHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45073,6 +45241,7 @@ transform = "{1, 0, 0, 1, 580, 0}";
 },
 {
 name = knTA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45117,6 +45286,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knTHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45161,6 +45331,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knDA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45205,6 +45376,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knDHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45249,6 +45421,7 @@ transform = "{1, 0, 0, 1, 620, 0}";
 },
 {
 name = knNA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45293,6 +45466,7 @@ transform = "{1, 0, 0, 1, 710, 0}";
 },
 {
 name = knPA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45337,6 +45511,7 @@ transform = "{1, 0, 0, 1, 710, 0}";
 },
 {
 name = knPHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45381,6 +45556,7 @@ transform = "{1, 0, 0, 1, 740, 0}";
 },
 {
 name = knBA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45425,6 +45601,7 @@ transform = "{1, 0, 0, 1, 755, 0}";
 },
 {
 name = knBHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45469,6 +45646,7 @@ transform = "{1, 0, 0, 1, 1060, 0}";
 },
 {
 name = knMA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45513,6 +45691,7 @@ transform = "{1, 0, 0, 1, 1250, 0}";
 },
 {
 name = knYA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45557,6 +45736,7 @@ transform = "{1, 0, 0, 1, 580, 0}";
 },
 {
 name = knRA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45601,6 +45781,7 @@ transform = "{1, 0, 0, 1, 750, 0}";
 },
 {
 name = knLA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45645,6 +45826,7 @@ transform = "{1, 0, 0, 1, 680, 0}";
 },
 {
 name = knVA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45689,6 +45871,7 @@ transform = "{1, 0, 0, 1, 600, 0}";
 },
 {
 name = knSHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45733,6 +45916,7 @@ transform = "{1, 0, 0, 1, 710, 0}";
 },
 {
 name = knSSA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45777,6 +45961,7 @@ transform = "{1, 0, 0, 1, 670, 0}";
 },
 {
 name = knSA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45821,6 +46006,7 @@ transform = "{1, 0, 0, 1, 700, 0}";
 },
 {
 name = knHA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45861,6 +46047,7 @@ layers = (
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45940,6 +46127,7 @@ transform = "{1, 0, 0, 1, 675, 0}";
 },
 {
 name = knLLA.base;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -45980,6 +46168,7 @@ layers = (
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -47673,16 +47862,18 @@ public.markColor = "0.25,0.25,0.25,1";
 {
 color = 11;
 glyphname = knNNA.base;
+lastChange = "2016-01-21 04:42:16 +0000";
 layers = (
 {
 components = (
 {
 name = knNNA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 800;
+width = 785;
 }
 );
 userData = {
@@ -49603,16 +49794,18 @@ public.markColor = "0.25,0.25,0.25,1";
 {
 color = 11;
 glyphname = knRRA.base;
+lastChange = "2016-01-21 04:42:17 +0000";
 layers = (
 {
 components = (
 {
 name = knRRA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 813;
+width = 793;
 }
 );
 userData = {
@@ -49714,16 +49907,18 @@ public.markColor = "0.25,0.25,0.25,1";
 {
 color = 11;
 glyphname = knLLLA.base;
+lastChange = "2016-01-21 04:42:17 +0000";
 layers = (
 {
 components = (
 {
 name = knLLLA;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
 name = Regular;
-width = 813;
+width = 793;
 }
 );
 userData = {
@@ -53018,6 +53213,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -53042,6 +53238,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = breve;
@@ -53066,6 +53263,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -53090,6 +53288,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -53114,6 +53313,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -53138,6 +53338,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -53231,6 +53432,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ring;
@@ -53255,6 +53457,7 @@ layers = (
 components = (
 {
 name = A;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -53543,6 +53746,7 @@ layers = (
 components = (
 {
 name = C;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -53567,6 +53771,7 @@ layers = (
 components = (
 {
 name = C;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -53591,6 +53796,7 @@ layers = (
 components = (
 {
 name = C;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = cedilla;
@@ -53747,6 +53953,7 @@ layers = (
 components = (
 {
 name = D;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -53771,6 +53978,7 @@ layers = (
 components = (
 {
 name = Eth;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -53897,6 +54105,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -53921,6 +54130,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -53945,6 +54155,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -53969,6 +54180,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -53993,6 +54205,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dotaccent;
@@ -54017,6 +54230,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -54041,6 +54255,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -54065,6 +54280,7 @@ layers = (
 components = (
 {
 name = E;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -54308,6 +54524,7 @@ layers = (
 components = (
 {
 name = G;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = breve;
@@ -54585,6 +54802,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -54609,6 +54827,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -54633,6 +54852,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -54657,6 +54877,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dotaccent;
@@ -54681,6 +54902,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -54705,6 +54927,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -54729,6 +54952,7 @@ layers = (
 components = (
 {
 name = I;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -55085,6 +55309,7 @@ layers = (
 components = (
 {
 name = L;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -55498,6 +55723,7 @@ layers = (
 components = (
 {
 name = N;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -55522,6 +55748,7 @@ layers = (
 components = (
 {
 name = N;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -55599,6 +55826,7 @@ layers = (
 components = (
 {
 name = N;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -55676,6 +55904,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -55700,6 +55929,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -55724,6 +55954,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -55748,6 +55979,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -55772,6 +56004,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = hungarumlaut;
@@ -55796,6 +56029,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -55880,6 +56114,7 @@ layers = (
 components = (
 {
 name = O;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -56331,6 +56566,7 @@ layers = (
 components = (
 {
 name = R;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -56355,6 +56591,7 @@ layers = (
 components = (
 {
 name = R;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -56524,6 +56761,7 @@ layers = (
 components = (
 {
 name = S;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -56548,6 +56786,7 @@ layers = (
 components = (
 {
 name = S;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -56572,6 +56811,7 @@ layers = (
 components = (
 {
 name = S;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = cedilla;
@@ -56766,6 +57006,7 @@ layers = (
 components = (
 {
 name = T;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -56953,6 +57194,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -56977,6 +57219,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -57001,6 +57244,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -57025,6 +57269,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -57049,6 +57294,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = hungarumlaut;
@@ -57073,6 +57319,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -57097,6 +57344,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -57121,6 +57369,7 @@ layers = (
 components = (
 {
 name = U;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ring;
@@ -57656,6 +57905,7 @@ layers = (
 components = (
 {
 name = Y;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -57680,6 +57930,7 @@ layers = (
 components = (
 {
 name = Y;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -57808,6 +58059,7 @@ layers = (
 components = (
 {
 name = Z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -57832,6 +58084,7 @@ layers = (
 components = (
 {
 name = Z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -57856,6 +58109,7 @@ layers = (
 components = (
 {
 name = Z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dotaccent;
@@ -57983,6 +58237,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -58007,6 +58262,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = breve;
@@ -58031,6 +58287,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -58055,6 +58312,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -58079,6 +58337,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -58103,6 +58362,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -58212,6 +58472,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ring;
@@ -58236,6 +58497,7 @@ layers = (
 components = (
 {
 name = a;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -58513,6 +58775,7 @@ layers = (
 components = (
 {
 name = c;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -58537,6 +58800,7 @@ layers = (
 components = (
 {
 name = c;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -58561,6 +58825,7 @@ layers = (
 components = (
 {
 name = c;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = cedilla;
@@ -58965,6 +59230,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -58989,6 +59255,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -59013,6 +59280,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -59037,6 +59305,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -59061,6 +59330,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dotaccent;
@@ -59085,6 +59355,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -59109,6 +59380,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -59133,6 +59405,7 @@ layers = (
 components = (
 {
 name = e;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -59383,6 +59656,7 @@ layers = (
 components = (
 {
 name = g;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = breve;
@@ -59856,6 +60130,7 @@ layers = (
 components = (
 {
 name = i;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -60220,6 +60495,7 @@ layers = (
 components = (
 {
 name = l;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -60620,6 +60896,7 @@ layers = (
 components = (
 {
 name = n;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -60644,6 +60921,7 @@ layers = (
 components = (
 {
 name = n;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -60725,6 +61003,7 @@ layers = (
 components = (
 {
 name = n;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -60796,6 +61075,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -60820,6 +61100,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -60844,6 +61125,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -60868,6 +61150,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -60892,6 +61175,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = hungarumlaut;
@@ -60916,6 +61200,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -61001,6 +61286,7 @@ layers = (
 components = (
 {
 name = o;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = tilde;
@@ -61481,6 +61767,7 @@ layers = (
 components = (
 {
 name = r;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -61505,6 +61792,7 @@ layers = (
 components = (
 {
 name = r;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -61529,6 +61817,7 @@ layers = (
 components = (
 {
 name = r;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -61638,6 +61927,7 @@ layers = (
 components = (
 {
 name = s;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -61662,6 +61952,7 @@ layers = (
 components = (
 {
 name = s;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -61686,9 +61977,11 @@ layers = (
 components = (
 {
 name = s;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = cedilla;
+transform = "{1, 0, 0, 1, 0, 0}";
 }
 );
 layerId = "034236B8-3FA8-43DA-9EDA-EFF269A687EC";
@@ -62182,6 +62475,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -62206,6 +62500,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = circumflex;
@@ -62230,6 +62525,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -62254,6 +62550,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = grave;
@@ -62278,6 +62575,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = hungarumlaut;
@@ -62302,6 +62600,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = macron;
@@ -62326,6 +62625,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ogonek;
@@ -62350,6 +62650,7 @@ layers = (
 components = (
 {
 name = u;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = ring;
@@ -62815,6 +63116,7 @@ layers = (
 components = (
 {
 name = y;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -62839,6 +63141,7 @@ layers = (
 components = (
 {
 name = y;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dieresis;
@@ -62961,6 +63264,7 @@ layers = (
 components = (
 {
 name = z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = acute;
@@ -62985,6 +63289,7 @@ layers = (
 components = (
 {
 name = z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = caron;
@@ -63009,6 +63314,7 @@ layers = (
 components = (
 {
 name = z;
+transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = dotaccent;
@@ -90994,17 +91300,17 @@ weightClass = Normal;
 );
 kerning = {
 "034236B8-3FA8-43DA-9EDA-EFF269A687EC" = {
-knRA = {
-knBA = -10;
-knBHA = -10;
-knCA = -10;
-knNGA = -10;
-knPA = -10;
-knPHA = -10;
-};
 knNYA = {
-knDA = -20;
-knRA = -20;
+knDA = "-20";
+knRA = "-20";
+};
+knRA = {
+knBA = "-10";
+knBHA = "-10";
+knCA = "-10";
+knNGA = "-10";
+knPA = "-10";
+knPHA = "-10";
 };
 };
 };
